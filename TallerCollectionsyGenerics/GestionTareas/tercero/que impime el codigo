@@ -1,0 +1,18 @@
+Dado el siguiente código escribir que imprime la ejecución del programa
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Set set = new LinkedHashSet();
+		set.add(new String("Chicago"));
+		set.add(new String("Boston"));
+		set.add(new String("Alabama"));
+		set.add(new String("Chicago"));
+		System.out.println(set);
+	}
+}
+// el codigo da a imprimir lo siguiente: [Chicago, Boston, Alabama]
+// El código utiliza un LinkedHashSet, que no permite elementos duplicados y mantiene el orden

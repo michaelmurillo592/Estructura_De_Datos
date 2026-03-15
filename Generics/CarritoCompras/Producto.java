@@ -1,0 +1,26 @@
+package Generics.CarritoCompras;
+
+public class Producto implements Vendible {
+
+    private String nombre;
+    private double precio;
+
+    public Producto(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
+    @Override
+    public double getPrecio() {
+        return precio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " - $" + precio;
+    }
+}
