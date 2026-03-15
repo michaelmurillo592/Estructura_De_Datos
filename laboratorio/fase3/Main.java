@@ -1,3 +1,5 @@
+package laboratorio.fase3;
+
 public class Main {
 
     public static SolicitudTaxi generarSolicitud(int i) {
